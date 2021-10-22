@@ -1,14 +1,21 @@
 module.exports = {
+
   "stories": [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    "../src/Components/**/*.stories.mdx",
+    "../src/Components/**/*.stories.@(js|jsx|ts|tsx)"
   ],
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials"
   ],
-  "framework": "@storybook/react",
   "core": {
     "builder": "storybook-builder-vite"
+  },
+  viteFinal: (config) => {
+    config.plugins = [
+      ...config.plugins,
+    ]
+    config.optimizeDeps.include.push('react-is', '@base2/pretty-print-object');
+    return config
   }
 }

@@ -2,6 +2,29 @@
 
 This repo contains the code for project atomics
 
+
+# Implementation
+
+Alerts
+Button
+Badge
+Buttons
+Dropdowns
+Images
+Inputs
+Menus
+Modals
+Navbars
+Pagination
+Popovers
+Progressbars
+Tabs
+Tooltips
+Table
+
+
+
+
 ## Prerequisites
 
 ```
